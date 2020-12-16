@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
 app.get('/players',(req,res)=>{
   res.send(players);
 })
+app.get('/test',(req,res)=>{
+  res.json(players);
+})
+
 
 app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
