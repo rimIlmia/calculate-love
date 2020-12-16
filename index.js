@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     }
   })
   .then(function (response) {
-    console.log(response);
+    res.send(response);
   })
   .catch(function (error) {
     console.log(error);
@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
   .then(function () {
     // always executed
   });  
-  res.send('Hello World!');
+  
 })
 app.get('/players',(req,res)=>{
   res.send(players);
