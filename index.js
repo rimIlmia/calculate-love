@@ -21,11 +21,10 @@ app.get('/', (req, res) => {
     res.send("bonjour",response);
   })
   .catch(function (error) {
-    console.log(error);
+       res.send("bonjour erreur appel api");
+
   })
-  .then(function () {
-    // always executed
-  });  
+ 
   
 })
 app.get('/players',(req,res)=>{
