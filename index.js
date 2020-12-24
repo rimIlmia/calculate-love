@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     }
   })
   .then(function (response) {
-    res.send(response);
+    res.send("bonjour",response);
   })
   .catch(function (error) {
     console.log(error);
